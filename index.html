@@ -10,8 +10,15 @@
     <div class="container">
         <h1 style="font-size: 3rem; text-align: center;">Weather</h1>
         <div class="inputfield">
-            <input type="text" id="city" placeholder="Enter city name" value="">
-        <button onclick="getWeather()"  class="fa-solid fa-magnifying-glass"></button>
+           <input
+  type="text"
+  id="city"
+  placeholder="Enter city name"
+  value=""
+  onkeydown="if (event.key === 'Enter') getWeather()"
+/>
+<button onclick="getWeather()" class="fa-solid fa-magnifying-glass"></button>
+
         </div>
 
        <div class="image-info">
