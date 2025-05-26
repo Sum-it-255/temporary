@@ -3,7 +3,6 @@ height:100vh;
 margin: 0%;
 padding: 0%;
 box-sizing: border-box;
-overflow: hidden;
 
 }
 .container{
@@ -93,4 +92,70 @@ img{
 .condition-block .label {
     font-size: 1rem;
     color: gray;
+}
+
+
+@media screen and (max-width: 600px) {
+     body {
+        overflow: auto;
+    }
+    .container {
+        margin: 0 10px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .inputfield {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .inputfield input {
+        width: 90%;
+        font-size: 1rem;
+        padding: 0.8rem;
+        margin-right: 0;
+    }
+
+    button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .image-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weatherdetail {
+        font-size: 1.5rem;
+    }
+
+    .weathercondition {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .condition-block i {
+        font-size: 2rem;
+    }
+
+    .condition-block .value {
+        font-size: 1rem;
+    }
+
+    .condition-block .label {
+        font-size: 0.9rem;
+    }
+
+    img {
+        height: 25vh;
+    }
+
+    body {
+        overflow: auto;
+        padding-bottom: 40px;
+    }
 }
